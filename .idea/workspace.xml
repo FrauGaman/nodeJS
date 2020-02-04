@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfc83f6-77f5-4ca7-ab32-2a022dbb39d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weather-app/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580804783968</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[*] note-app add readme file">
+      <created>1580809746091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580809746091</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,20 +74,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[*] note-app create note-app" />
-    <option name="LAST_COMMIT_MESSAGE" value="[*] note-app create note-app" />
+    <MESSAGE value="[*] note-app add readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="[*] note-app add readme file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580804783890">
+    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580809746022">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580804783890" />
+    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580809746022" />
     <state x="759" y="265" width="458" height="574" key="RollbackChangesDialog" timestamp="1580808880965">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="759" y="265" width="458" height="574" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580808880965" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580804791104">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580809755425">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580804791104" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580809755425" />
   </component>
 </project>
