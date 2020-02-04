@@ -1,5 +1,6 @@
 # Description
 Here are my results in a course on Node.js.
 
-There is one project here:
+There are two projects here:
 - notes-app
+- weather-app (asynchronous Node.js)
