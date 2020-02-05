@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdfc83f6-77f5-4ca7-ab32-2a022dbb39d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weather-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/notes.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/notes.json" afterDir="false" />
+    <list default="true" id="cdfc83f6-77f5-4ca7-ab32-2a022dbb39d7" name="Default Changelist" comment="[*] weather-app init project">
+      <change afterPath="$PROJECT_DIR$/playground/4-callbacks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-app/utils/forecast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-app/utils/geocode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +55,7 @@
       <workItem from="1580366004024" duration="1703000" />
       <workItem from="1580709376461" duration="8891000" />
       <workItem from="1580791156518" duration="10697000" />
+      <workItem from="1580865650092" duration="19410000" />
     </task>
     <task id="LOCAL-00001" summary="[*] note-app create note-app">
       <created>1580804783968</created>
@@ -70,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580809746091</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[*] weather-app init project">
+      <created>1580813659005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580813659005</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,20 +87,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[*] note-app create note-app" />
     <MESSAGE value="[*] note-app add readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="[*] note-app add readme file" />
+    <MESSAGE value="[*] weather-app init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="[*] weather-app init project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580810017070">
+    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580894849041">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580810017070" />
+    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580894849041" />
     <state x="759" y="265" width="458" height="574" key="RollbackChangesDialog" timestamp="1580808880965">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="759" y="265" width="458" height="574" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580808880965" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580810024466">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580813664022">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580810024466" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580813664022" />
+    <state x="647" y="170" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580886749284">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="647" y="170" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580886749284" />
   </component>
 </project>
