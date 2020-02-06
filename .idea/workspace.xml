@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdfc83f6-77f5-4ca7-ab32-2a022dbb39d7" name="Default Changelist" comment="[*] weather-app callback functions usage">
-      <change afterPath="$PROJECT_DIR$/playground/5-es6-objects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playground/6-raw-http.js" afterDir="false" />
+    <list default="true" id="cdfc83f6-77f5-4ca7-ab32-2a022dbb39d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web-server/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/public/img/robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/partials/footer.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/partials/header.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/views/NotFound.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/views/NotFoundHelp.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/views/about.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/views/help.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-server/templates/views/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/utils/forecast.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/utils/forecast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/utils/geocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/utils/geocode.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-server/templates/views" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\NODEJS" />
     </key>
@@ -57,7 +66,7 @@
       <workItem from="1580709376461" duration="8891000" />
       <workItem from="1580791156518" duration="10697000" />
       <workItem from="1580865650092" duration="19923000" />
-      <workItem from="1580955430634" duration="5982000" />
+      <workItem from="1580955430634" duration="26249000" />
     </task>
     <task id="LOCAL-00001" summary="[*] note-app create note-app">
       <created>1580804783968</created>
@@ -94,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580899817844</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[*] weather-app https usage">
+      <created>1580963731130</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580963731130</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,25 +121,26 @@
     <MESSAGE value="[*] note-app add readme file" />
     <MESSAGE value="[*] weather-app init project" />
     <MESSAGE value="[*] weather-app callback functions usage" />
-    <option name="LAST_COMMIT_MESSAGE" value="[*] weather-app callback functions usage" />
+    <MESSAGE value="[*] weather-app https usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="[*] weather-app https usage" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="654" y="357" width="668" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580959287458">
+    <state x="654" y="357" width="668" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580963744241">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="654" y="357" width="668" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580959287458" />
-    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580899822872">
+    <state x="654" y="357" width="668" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580963744241" />
+    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580963731015">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580899822872" />
+    <state x="558" y="149" width="860" height="807" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580963731015" />
     <state x="759" y="265" width="458" height="574" key="RollbackChangesDialog" timestamp="1580808880965">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="759" y="265" width="458" height="574" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580808880965" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580899828887">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580963735418">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580899828887" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580963735418" />
     <state x="647" y="170" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580886749284">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
