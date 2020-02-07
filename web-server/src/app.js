@@ -52,13 +52,17 @@ app.get('/weather', (req, res) => {
 
 app.get('/help/*', (req, res) => {
     res.render('NotFoundHelp', {
+        title: '404',
         errorMessage: 'Help article not found',
+        name: 'Margarita Gaman'
     })
 });
 
 app.get('*', (req, res) => {
     res.render('NotFound', {
+        title: '404',
         errorMessage: 'Page not found',
+        name: 'Margarita Gaman'
     })
 });
 
