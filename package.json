@@ -2,8 +2,9 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "Here are my results in a course on Node.js.",
-  "main": "./web-server/src/app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node web-server/src/app.js"
+    "heroku-prebuild": "cd web-server",
+    "start": "node src/app.js"
   }
 }
