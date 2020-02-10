@@ -4,7 +4,7 @@
   "description": "Here are my results in a course on Node.js.",
   "main": "index.js",
   "scripts": {
-    "heroku-prebuild": "cd web-server",
+    "heroku-prebuild": "cd web-server && npm i",
     "start": "node src/app.js"
   }
 }
