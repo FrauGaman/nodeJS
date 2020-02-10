@@ -1,0 +1,10 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Here are my results in a course on Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "heroku-prebuild": "cd web-server",
+    "start": "node src/app.js"
+  }
+}
