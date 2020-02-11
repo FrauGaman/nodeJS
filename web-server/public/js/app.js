@@ -39,7 +39,7 @@ weatherForm.addEventListener('submit', (e) => {
                         messageOne.textContent = data.error;
                     } else {
                         messageOne.textContent = data.location;
-                        messageTwo.textContent = `Temperature: ${data.forecast.temperature}, PrecipProbability: ${data.forecast.precipProbability}`;
+                        messageTwo.textContent = data.forecast;
                     }
                 })
         });
