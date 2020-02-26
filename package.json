@@ -6,5 +6,8 @@
   "scripts": {
     "heroku-prebuild": "cd web-server && npm i",
     "start": "node web-server/src/app.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
   }
 }
