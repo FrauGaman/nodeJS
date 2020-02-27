@@ -5,7 +5,7 @@ const userRouter = require('./routers/user');
 const taskRouter = require('./routers/task');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // app.use((req, res, next) => {
 //     if (req.method === 'GET') {
@@ -15,9 +15,9 @@ const port = process.env.PORT || 3000;
 //     }
 // });
 
-app.use((req, res, next) => {
-    res.status(503).send('Site is currently down. Check back soon!');
-});
+// app.use((req, res, next) => {
+//     res.status(503).send('Site is currently down. Check back soon!');
+// });
 
 app.use(express.json());
 app.use(userRouter);
@@ -52,14 +52,25 @@ app.listen(port, () => {
 // myFunction();
 
 //jwt example
-const jwt = require('jsonwebtoken');
-const myFunction = async () => {
-    //return auth token
-    const token = jwt.sign({ _id: 'abc13' }, 'thisissomekey', { expiresIn: '7days' });
-    console.log(token);
+// const jwt = require('jsonwebtoken');
+// const myFunction = async () => {
+//     //return auth token
+//     const token = jwt.sign({ _id: 'abc13' }, 'thisissomekey', { expiresIn: '7days' });
+//     console.log(token);
+//
+//     const data = jwt.verify(token, 'thisissomekey');
+//     console.log(data);
+// };
+//
+// myFunction();
 
-    const data = jwt.verify(token, 'thisissomekey');
-    console.log(data);
-};
-
-myFunction();
+//what is doing userSchema.methods.toJSON (from models)
+// const pet = {
+//     name: 'Cat'
+// };
+//
+// pet.toJSON = function() {
+//     return {};
+// };
+//
+// console.log(JSON.stringify(pet));
