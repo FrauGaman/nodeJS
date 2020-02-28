@@ -73,3 +73,20 @@ app.listen(port, () => {
 // };
 //
 // console.log(JSON.stringify(pet));
+
+//add relationships between models
+// const Task = require('./models/task');
+// const User = require('./models/user');
+// const main = async () => {
+//     //relationships Task -> User
+//     // const task = await Task.findById('5e588a8f29b06a14341a11af');
+//     // await task.populate('owner').execPopulate();
+//     // console.log(task.owner);
+//
+    //relationships User -> Task
+    // const user = await User.findById('5e588a8329b06a14341a11ad');
+    // await user.populate('tasks').execPopulate();
+    // console.log(user.tasks);
+// };
+//
+// main();
