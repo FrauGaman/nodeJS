@@ -7,6 +7,8 @@ const taskRouter = require('./routers/task');
 const app = express();
 const port = process.env.PORT || 3001;
 
+//____________________________
+
 // app.use((req, res, next) => {
 //     if (req.method === 'GET') {
 //         res.send('GET requests are disable')
@@ -18,6 +20,52 @@ const port = process.env.PORT || 3001;
 // app.use((req, res, next) => {
 //     res.status(503).send('Site is currently down. Check back soon!');
 // });
+
+
+//____________________________
+//how to upload the file
+//cb - callback
+// const multer = require('multer');
+// const upload = multer({
+//    dest: 'images',
+//     limits: {
+//         fileSize: 1000000 //1Mb
+//     },
+//     fileFilter(req, file, cb) {
+//        // if (!file.originalname.endsWith('.pdf')) {
+//        //     return cb(new Error('Please upload PDF'))
+//        // }
+//
+//         if (!file.originalname.match(/\.(doc|docx)$/)) {
+//             return cb(new Error('Please upload Word document'))
+//         }
+//
+//         //accept the upload
+//         cb(undefined, true);
+//
+//        // cb(new Error('File must be a PDF'));
+//        // cb(undefined, true);
+//        // cb(undefined, false);
+//     }
+// });
+
+// not beautiful error
+// app.post('/upload', upload.single('upload'), (req, res) => {
+//    res.send()
+// });
+
+// const errorMiddleware = (req, res, next) => {
+//     throw new Error('From my middleware')
+// };
+
+//beautiful error
+// app.post('/upload', upload.single('upload'), (req, res) => {
+//    res.send()
+// }, (error, req, res, next) => {
+//     res.status(400).send({ error: error.message })
+// });
+
+//____________________________
 
 app.use(express.json());
 app.use(userRouter);

@@ -50,7 +50,10 @@ const userSchema = new mongoose.Schema({
                 required: true,
             }
         }
-    ]
+    ],
+    avatar: {
+        type: Buffer
+    }
 }, {
     timestamps: true,
 });
@@ -67,6 +70,7 @@ userSchema.methods.toJSON = function() {
 
     delete userObject.password;
     delete userObject.tokens;
+    delete userObject.avatar;
     return userObject;
 };
 
@@ -93,7 +97,6 @@ userSchema.statics.findByCredentials = async (email, password) => {
 
     return user;
 };
-
 
 //middleware that works before each router
 //hash the plain text password before saving
