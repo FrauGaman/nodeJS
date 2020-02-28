@@ -5,7 +5,6 @@ const router = new express.Router();
 
 router.post('/users', async (req, res) => {
     const user = new User(req.body);
-
     try {
         await user.save();
         const token = await user.generateAuthToken();
@@ -19,9 +18,8 @@ router.post('/users/login', async(req, res) => {
     try{
         const user = await User.findByCredentials(req.body.email, req.body.password);
         const token = await user.generateAuthToken();
-
         // res.send({ user: user.getPublicProfile(), token });
-        res.send({ user, token })
+        res.send({ user, token });
     } catch(e) {
         res.status(400).send();
     }
@@ -50,34 +48,30 @@ router.post('/users/logoutAll', auth, async (req, res) => {
 });
 
 router.get('/users', auth, async (req, res) => {
-
     try {
         const users = await User.find({});
         res.send(users);
     } catch(e) {
-        res.status(500).send()
+        res.status(500).send();
     }
 });
 
 router.get('/users/me', auth, async (req, res) => {
-    res.send(req.user)
+    res.send(req.user);
 });
 
-router.patch('/users/me', async (req, res) => {
+router.patch('/users/me', auth, async (req, res) => {
     const updates = Object.keys(req.body);
     const allowedUpdates = ['name', 'email', 'password', 'age'];
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update));
 
     if (!isValidOperation) {
-        return res.status(400).send({error: 'Invalid updates!'})
+        return res.status(400).send({error: 'Invalid updates!'});
     }
 
     try {
-        const user = await User.findById(req.user._id);
-        updates.forEach((update) => user[update] = req.body[update]);
-
-        await user.save();
-
+        updates.forEach((update) => req.user[update] = req.body[update]);
+        await req.user.save();
         res.send(req.user);
     } catch (e) {
         return res.status(400).send(e);
@@ -90,12 +84,10 @@ router.delete('/users/me', auth, async (req, res) => {
         // if (!user) {
         //     res.status(404).send();
         // }
-
-        req.user.remove();
-
+        await req.user.remove();
         res.send(req.user);
     } catch(e) {
-        res.status(500).send()
+        res.status(500).send();
     }
 });
 
@@ -106,7 +98,7 @@ router.get('/user/:id', async (req, res) => {
         if (!userById) {
             return res.status(404).send();
         }
-        res.send(userById)
+        res.send(userById);
     } catch(e) {
         res.status(500).send();
     }
@@ -118,7 +110,7 @@ router.patch('/users/:id', async (req, res) => {
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update));
 
     if (!isValidOperation) {
-        return res.status(400).send({error: 'Invalid updates!'})
+        return res.status(400).send({error: 'Invalid updates!'});
     }
 
     try {
@@ -148,7 +140,7 @@ router.delete('/users/:id', async (req, res) => {
 
         res.send(user);
     } catch(e) {
-        res.status(500).send()
+        res.status(500).send();
     }
 
 });

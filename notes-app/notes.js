@@ -12,7 +12,7 @@ const addNote = (title, body) => {
       body: body,
     });
     saveNotes(notes);
-    console.log(chalk.green.inverse('New note added'))
+    console.log(chalk.green.inverse('New note added'));
   } else {
     console.log(chalk.red.inverse('Note title taken!'));
   }
@@ -24,16 +24,16 @@ const removeNote = title => {
 
   if (notes.length > newNotes.length) {
     saveNotes(newNotes);
-    console.log(chalk.green.inverse('Note with title "' + title + '" was removed'))
+    console.log(chalk.green.inverse('Note with title "' + title + '" was removed'));
   } else {
-    console.log(chalk.red.inverse('No note found'))
+    console.log(chalk.red.inverse('No note found'));
   }
 };
 
 const listNotes = () => {
   const notes = loadNotes();
   console.log(chalk.hex('#FF00FF').inverse('Your notes: '));
-  notes.forEach(note => console.log(note.title))
+  notes.forEach(note => console.log(note.title));
 };
 
 const readNote = (title) => {
@@ -41,24 +41,24 @@ const readNote = (title) => {
   const readNote = notes.find(note => note.title === title);
   if (readNote) {
     console.log(chalk.hex('#FF1493').inverse(readNote.title));
-    console.log(readNote.body)
+    console.log(readNote.body);
   } else {
-    console.log(chalk.red.inverse('No note found'))
+    console.log(chalk.red.inverse('No note found'));
   }
 };
 
 const saveNotes = notes => {
   const dataJSON = JSON.stringify(notes);
-  fs.writeFileSync('notes.json',dataJSON)
+  fs.writeFileSync('notes.json',dataJSON);
 };
 
 const loadNotes = () => {
   try {
     const dataBuffer = fs.readFileSync('notes.json');
     const dataJSON = dataBuffer.toString();
-    return JSON.parse(dataJSON)
+    return JSON.parse(dataJSON);
   } catch (e) {
-    return []
+    return [];
   }
 };
 
@@ -68,4 +68,3 @@ module.exports = {
   listNotes: listNotes,
   readNote: readNote,
 };
-

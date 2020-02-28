@@ -13,7 +13,7 @@ const forecast = require('./utils/forecast');
 
 const address =  process.argv[2];
 if (!address) {
-    console.log('Please, provide a message!')
+    console.log('Please, provide a message!');
 } else {
     geocode(address, (error, { latitude, longitude, location }) => {
         if (error) {
@@ -28,6 +28,3 @@ if (!address) {
         });
     });
 }
-
-
-
