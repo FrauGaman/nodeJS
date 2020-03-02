@@ -23,7 +23,7 @@ router.post('/users', async (req, res) => {
     try {
         await user.save();
         const token = await user.generateAuthToken();
-        res.status(201).send({ user, token })
+        res.status(201).send({ user, token });
     } catch(e) {
         res.status(400).send(e);
     }
@@ -113,7 +113,7 @@ router.post('/users/me/avatar', auth, upload.single('avatar'), async (req, res) 
     await req.user.save();
     res.send();
 }, (error, req, res, next) => {
-    res.status(400).send({ error: error.message })
+    res.status(400).send({ error: error.message });
 });
 
 router.delete('/users/me/avatar', auth, async (req, res) => {
@@ -127,11 +127,11 @@ router.get('/users/:id/avatar', async (req, res) => {
         const user = await User.findById(req.params.id);
 
         if(!user || !user.avatar) {
-            throw new Error()
+            throw new Error();
         }
 
         res.set('Content-Type', 'image/png');
-        res.send(user.avatar)
+        res.send(user.avatar);
 
     }catch(e) {
         res.status(404).send();

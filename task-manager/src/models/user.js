@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
         lowercase: true,
         validate(value) {
             if(!validator.isEmail(value)) {
-                throw new Error('Email is invalid')
+                throw new Error('Email is invalid');
             }
 
         }
@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema({
         minlength: 7,
         validate(value) {
             if(value.toLowerCase().includes('password')) {
-                throw new Error('Password cannot contain "password')
+                throw new Error('Password cannot contain "password');
             }
         }
     },
@@ -76,7 +76,7 @@ userSchema.methods.toJSON = function() {
 
 userSchema.methods.generateAuthToken = async function() {
     const user = this;
-    const token = jwt.sign({ _id: user._id.toString() }, 'thisissomykey');
+    const token = jwt.sign({ _id: user._id.toString() }, process.env.JWT_SECRET);
 
     user.tokens = user.tokens.concat({ token });
     await user.save();
@@ -87,7 +87,7 @@ userSchema.methods.generateAuthToken = async function() {
 userSchema.statics.findByCredentials = async (email, password) => {
     const user = await User.findOne({ email });
     if (!user) {
-        throw new Error('Unable to login')
+        throw new Error('Unable to login');
     }
 
     const isMatchPassword = await bcrypt.compare(password, user.password);
