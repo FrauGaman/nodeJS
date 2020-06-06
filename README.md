@@ -1,5 +1,4 @@
 # Description
-Here are my results in a course on Node.js.
 
 There are four projects here:
 - notes-app
